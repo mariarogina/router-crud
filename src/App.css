@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+html {
+  font-size: calc( 10px + (14 - 10) * ((100vw - 400px) / ( 800 - 400)));
+}
+
+body {
+  font-family: sans-serif;
+  background: #eceaee;
+}
+
+.postBlock {
+  height: 70px;
+}
+
+.wrapperMessage {
+  margin: auto;
+  margin-top: 20px;
+  width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+ 
+}
+
+.newPost {
+  height: 40px;
+  width: 490px;
+  display: table-cell; 
+  vertical-align: middle;
+  text-align: right;
+}
+
+.postHeader {
+  width:400px
+}
+
+
+#upperSections{
+  height: 40px;
+  width: 400px;
+  display: table-cell; 
+  vertical-align: middle;
+  margin: 15px;
+  text-align: center;
+}
+
+
+img{  
+  width: 55px;
+}
+
+
+
+#editCard input{
+  display: inline-block;
+  width: 75%;
+}
+
+textarea {
+  border-width: 0px;
+  width: 300px;
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  margin:20px
+}
+
+.post-text {
+  width: 100%;
+  margin:20px;
+  font-size: 1.1rem;
+}
+
+.right {
+  text-align: right;
+}
+
+.reaction {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.cardBlock {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.postHeader table{
+  border: none;
+}
+
+.userName {
+  color: rgb(65, 74, 199);
+}
+
+.userPosition {
+  color: rgb(103, 104, 116);
+}
+
+.commentBlock input{
+  height: 40px;
+  width:350px;
+  margin-left: 15px;
+  padding-left: 10px;
+  outline:none
+}
+
+.padding {
+  padding: 10px;
+}
+
+.leftPadding {
+  padding-left: 10px;
+}
+
+.cardInList:hover {
+  cursor: pointer;
+}
+
+
+.actions td{
+  background-color: rgb(240, 238, 238);
+  border-radius: 10px;
+}
+
+.actions {
+  border-spacing: 10px;
+}
+
