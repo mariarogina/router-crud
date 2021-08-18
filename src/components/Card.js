@@ -5,7 +5,6 @@ import moment from "moment";
 
 function Card(props) {
   const { content, created } = props;
-  console.log("Card Props" + props)
 
   const formatDateTime = (date) => {
     if (!date) {
@@ -76,12 +75,16 @@ function Card(props) {
 export default Card;
 
 Card.propTypes = {
-  post: PropTypes.func,
+  id:PropTypes.number,
+  content:PropTypes.string,
+  created:PropTypes.number,
  
 };
 
 Card.defaultProps = {
-  post: ()=>{},
+  id:'',
+  content:'',
+  created:'',
  
 };
 

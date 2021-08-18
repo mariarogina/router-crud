@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import Card from "./Card";
+import PropTypes from 'prop-types'; 
 
 
 
@@ -27,11 +28,15 @@ function CardWrap (props) {
 export default CardWrap;
 
 CardWrap.propTypes = {
-  post: PropTypes.func,
+  id:PropTypes.number,
+  content:PropTypes.string,
+  created:PropTypes.number,
  
 };
 
 CardWrap.defaultProps = {
-  post: ()=>{},
+  id:'',
+  content:'',
+  created:'',
  
 };

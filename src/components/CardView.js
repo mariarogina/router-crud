@@ -88,11 +88,15 @@ function CardView(props) {
 export default CardView;
 
 CardView.propTypes = {
-  post: PropTypes.func,
+  id:PropTypes.number,
+  content:PropTypes.string,
+  created:PropTypes.number,
  
 };
 
 CardView.defaultProps = {
-  post: ()=>{},
+  id:'',
+  content:'',
+  created:'',
  
 };

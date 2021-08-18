@@ -6,7 +6,7 @@ import CardWrap from "./CardWrap";
 
 function CardsList() {
   const { posts, savePosts } = useContext(PostsContext);
-
+console.info ( { posts, savePosts } )
   useEffect(() => {
 
     let initList = async () => {

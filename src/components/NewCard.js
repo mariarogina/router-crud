@@ -77,11 +77,16 @@ function NewCard(props) {
 export default NewCard;
 
 NewCard.propTypes = {
-  post: PropTypes.func,
+  id:PropTypes.number,
+  content:PropTypes.string,
+  created:PropTypes.number,
  
 };
 
 NewCard.defaultProps = {
-  post: ()=>{},
+  id:'',
+  content:'',
+  created:'',
  
 };
+
