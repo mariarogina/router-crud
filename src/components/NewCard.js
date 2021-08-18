@@ -6,6 +6,8 @@ function NewCard(props) {
   const { history } = props;
   const [inputValue, setInputValue] = useState();
 
+  console.log({...history})
+
   const changeValue = (evt) => {
     const { value } = evt.target;
     setInputValue(value);

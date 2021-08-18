@@ -25,3 +25,13 @@ function CardWrap (props) {
 }
 
 export default CardWrap;
+
+CardWrap.propTypes = {
+  post: PropTypes.func,
+ 
+};
+
+CardWrap.defaultProps = {
+  post: ()=>{},
+ 
+};
